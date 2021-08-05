@@ -41,7 +41,7 @@ spider.py文件里，利用cloudmusic库对网易云音乐的歌词数据进行�
 SpecificSongSelector类实现了歌词的初步处理，包括利用re和filter对歌词中的符号和一些诸如"编曲:快乐的乌龟"的非歌词信息进行去除。
 
 同时对一首歌多种歌词进行选择，通过一个函数rule进行每个字符逐个判断，是否为所规定的语言的字符，最后以
-$$\frac{所规规定语言的字符数目}{总体字符数目} \geq ratio$$
+$\frac{所规规定语言的字符数目}{总体字符数目} \geq ratio$
 为基准选择出中文歌词。
 
 Tool中的类方法transform_lyrics_to_std实现了对Lyrics文件中的所有歌进行选择，并且最终保存在一个all_data的文件中。
